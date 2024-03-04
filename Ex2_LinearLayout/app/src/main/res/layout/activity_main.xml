@@ -24,7 +24,7 @@
         android:id="@+id/nut02"
         android:text="Nút Số 2"
         android:textSize="40px"
-        android:textColor="#FFEB3B"
+        android:textColor="#EDD500"
         android:background="#11D1BF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
