@@ -15,7 +15,7 @@
         android:text="Nút Số 1"
         android:textSize="40px"
         android:textColor="#E91E63"
-        android:background="#11D1BF"
+        android:backgroundTint="#03A9F4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
