@@ -16,16 +16,18 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextSo1;
     EditText editTextSo2;
     EditText editTextKQ;
-    Button nutCong,nutTru,nutChia,nutNhan;
-    void TimDieuKhien(){
-        editTextSo1 = (EditText)findViewById(R.id.edtSo1);
-        editTextSo2 = (EditText)findViewById(R.id.edtSo2);
-        editTextKQ = (EditText)findViewById(R.id.edtKetQua);
-        nutCong = (Button)findViewById(R.id.btnCong);
-        nutTru = (Button)findViewById(R.id.btnTru);
-        nutNhan = (Button)findViewById(R.id.btnNhan);
-        nutChia = (Button)findViewById(R.id.btnChia);
+    Button nutCong, nutTru, nutChia, nutNhan;
+
+    void TimDieuKhien() {
+        editTextSo1 = (EditText) findViewById(R.id.edtSo1);
+        editTextSo2 = (EditText) findViewById(R.id.edtSo2);
+        editTextKQ = (EditText) findViewById(R.id.edtKetQua);
+        nutCong = (Button) findViewById(R.id.btnCong);
+        nutTru = (Button) findViewById(R.id.btnTru);
+        nutNhan = (Button) findViewById(R.id.btnNhan);
+        nutChia = (Button) findViewById(R.id.btnChia);
     }
+
     //C1:
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
 //        TimDieuKhien();
 //        //Gắn bộ lắng nghe sự kiện và code xử lý
-//
-//        View.OnClickListener boLangNgheCong = new View.OnClickListener() {
+//        nutCong.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
 //                //b1.1 Lấy dữ liệu từ 2 điều khiển đó
@@ -51,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
 //                //b3.3 gắn kê quả lên đk
 //                editTextKQ.setText(chuoiKQ);
 //            }
-//        };
-//        nutCong.setOnClickListener(boLangNgheCong);
+//        });
 //        nutTru.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -63,10 +63,10 @@ public class MainActivity extends AppCompatActivity {
 //                float soA = Float.parseFloat(soThu1);
 //                float soB = Float.parseFloat(soThu2);
 //                //b2 Tính toán
-//                float Tru = soA - soB;
+//                float Hieu = soA - soB;
 //                //b3 Hiện kq
 //                //b3.1 Chuẩn bị dl xuất, biến thành dạng chuỗi
-//                String chuoiKQ = String.valueOf(Tru);
+//                String chuoiKQ = String.valueOf(Hieu);
 //                //b3.3 gắn kê quả lên đk
 //                editTextKQ.setText(chuoiKQ);
 //            }
@@ -81,10 +81,10 @@ public class MainActivity extends AppCompatActivity {
 //                float soA = Float.parseFloat(soThu1);
 //                float soB = Float.parseFloat(soThu2);
 //                //b2 Tính toán
-//                float Nhan = soA * soB;
+//                float Tich = soA * soB;
 //                //b3 Hiện kq
 //                //b3.1 Chuẩn bị dl xuất, biến thành dạng chuỗi
-//                String chuoiKQ = String.valueOf(Nhan);
+//                String chuoiKQ = String.valueOf(Tich);
 //                //b3.3 gắn kê quả lên đk
 //                editTextKQ.setText(chuoiKQ);
 //            }
@@ -99,44 +99,45 @@ public class MainActivity extends AppCompatActivity {
 //                float soA = Float.parseFloat(soThu1);
 //                float soB = Float.parseFloat(soThu2);
 //                //b2 Tính toán
-//                float Chia = soA / soB;
+//                float Thuong = soA / soB;
 //                //b3 Hiện kq
 //                //b3.1 Chuẩn bị dl xuất, biến thành dạng chuỗi
-//                String chuoiKQ = String.valueOf(Chia);
+//                String chuoiKQ = String.valueOf(Thuong);
 //                //b3.3 gắn kê quả lên đk
 //                editTextKQ.setText(chuoiKQ);
 //            }
 //        });
-
-    //C2:
+//    }
+        //C2:
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TimDieuKhien();
         //Gắn bộ lắng nghe sự kiện và code xử lý
-        View.OnClickListener boLangNgheCong = new View.OnClickListener() {
+        nutCong.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 XuLy_Cong();
             }
-        };
-        nutCong.setOnClickListener(boLangNgheCong);
+        });
+
+
         nutTru.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 XuLy_Tru();
             }
         });
         nutNhan.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                XuLy_Nhan();
             }
         });
         nutChia.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 XuLy_Chia();
             }
         });
@@ -147,14 +148,40 @@ public class MainActivity extends AppCompatActivity {
         //Lấy dữ liệu
         String soThu1 = editTextSo1.getText().toString();
         String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Tong = soA + soB;
+        String chuoiKQ = String.valueOf(Tong);
+        editTextKQ.setText(chuoiKQ);
     }
     void XuLy_Tru(){
-
+        //Lấy dữ liệu
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Hieu = soA - soB;
+        String chuoiKQ = String.valueOf(Hieu);
+        editTextKQ.setText(chuoiKQ);
     }
     void XuLy_Nhan(){
-
+        //Lấy dữ liệu
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Tich = soA * soB;
+        String chuoiKQ = String.valueOf(Tich);
+        editTextKQ.setText(chuoiKQ);
     }
     void XuLy_Chia(){
-
+        //Lấy dữ liệu
+        String soThu1 = editTextSo1.getText().toString();
+        String soThu2 = editTextSo2.getText().toString();
+        float soA = Float.parseFloat(soThu1);
+        float soB = Float.parseFloat(soThu2);
+        float Thuong = soA / soB;
+        String chuoiKQ = String.valueOf(Thuong);
+        editTextKQ.setText(chuoiKQ);
     }
 }
