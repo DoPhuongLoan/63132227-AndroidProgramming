@@ -3,17 +3,12 @@ package pl.ntu.lvnangcao;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
 
 import pl.ntu.lvnangcao.Adapter.CountryAdapter;
-import pl.ntu.lvnangcao.Modul.Country;
-import pl.ntu.lvnangcao.R;
+import pl.ntu.lvnangcao.Model.Country;
 
 public class MainActivity extends AppCompatActivity {
 

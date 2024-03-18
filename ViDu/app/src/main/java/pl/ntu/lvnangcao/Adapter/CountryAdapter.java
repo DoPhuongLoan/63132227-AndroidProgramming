@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import pl.ntu.lvnangcao.R;
-import pl.ntu.lvnangcao.Modul.Country;
+import pl.ntu.lvnangcao.Model.Country;
 
 public class CountryAdapter extends BaseAdapter {
     //Nguồn dữ liệu cho Adapter

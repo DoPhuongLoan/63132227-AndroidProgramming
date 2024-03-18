@@ -1,4 +1,4 @@
-package pl.ntu.lvnangcao.Modul;
+package pl.ntu.lvnangcao.Model;
 
 public class Country {
     String tenQG;
