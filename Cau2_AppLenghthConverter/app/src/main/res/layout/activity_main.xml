@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="409dp"
+        android:layout_height="83dp"
+        android:background="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="Đổi Đơn Vị Đo Độ Dài"
+        android:textColor="#24379F"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="105dp"
+        android:text="Nhập Số: "
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnhap"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <RadioGroup
+        android:id="@+id/rd1"
+        android:layout_width="118dp"
+        android:layout_height="338dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/rdKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdHm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdDam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dam"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdDm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdCm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdMm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rd2"
+        android:layout_width="112dp"
+        android:layout_height="337dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/rd1"
+        app:layout_constraintTop_toBottomOf="@+id/txtnhap">
+
+        <RadioButton
+            android:id="@+id/rsKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Km"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsHm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsDam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dam"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsDm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsCm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rsMm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mm"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btndoi"
+        android:layout_width="112dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="140dp"
+        android:text="Đổi"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rd2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnhap" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Kết Quả:"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rd1" />
+
+    <TextView
+        android:id="@+id/txtkq"
+        android:layout_width="116dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="156dp"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/btndoi" />
+
+    <TextView
+        android:id="@+id/txtthongbao"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="30dp"
+        android:enabled="false"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkq" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
