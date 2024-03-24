@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLayouts">
-    <shared>
-      <config />
-    </shared>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd068f4c-4962-4936-b385-657bad98888a" name="Changes" comment="" />
+    <list default="true" id="96cb9a25-1504-48f5-9f36-4c2915d0b878" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +13,6 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Admin\.android\avd\Medium_Phone_API_24.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -28,9 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
+  "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2e7fBSX6atlPpVlVizrhDTf8eDL" />
+  <component name="ProjectId" id="2e7hLl64zvTXUJLKjY2EYNUfv73" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -118,11 +112,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd068f4c-4962-4936-b385-657bad98888a" name="Changes" comment="" />
-      <created>1711260402856</created>
+      <changelist id="96cb9a25-1504-48f5-9f36-4c2915d0b878" name="Changes" comment="" />
+      <created>1711261470132</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711260402856</updated>
+      <updated>1711261470132</updated>
     </task>
     <servers />
   </component>
