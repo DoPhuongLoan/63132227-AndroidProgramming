@@ -271,12 +271,42 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		return ketqua;
 	}
 	private double DoiTuCm(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 100000;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap / 10000;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap / 1000;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap / 100;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 10;
+		}
+		return ketqua;
 	}
 	private double DoiTuMm(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 1000000;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap / 100000;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap / 10000;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap / 1000;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap / 100;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap;
+		}
+		return ketqua;
 	}
 	
 }
