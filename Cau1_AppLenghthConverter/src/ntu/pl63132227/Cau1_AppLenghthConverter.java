@@ -195,20 +195,80 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		return ketqua;
 	}
 	private double DoiTuHec(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap * 10;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap * 100;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap * 1000;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap * 10000;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 100000;
+		}
+		return ketqua;
 	}
 	private double DoiTuDam(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 100;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap * 10;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap * 100;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap * 1000;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 10000;
+		}
+		return ketqua;
 	}
 	private double DoiTuMet(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 1000;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap / 100;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap * 10;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap * 100;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 1000;
+		}
+		return ketqua;
 	}
 	private double DoiTuDm(double nhap, String gtdoi) {
-		// TODO Auto-generated method stub
-		return 0;
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap / 10000;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap / 1000;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap / 100;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap / 10;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap * 10;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 100;
+		}
+		return ketqua;
 	}
 	private double DoiTuCm(double nhap, String gtdoi) {
 		// TODO Auto-generated method stub
