@@ -105,11 +105,12 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		
 		txtkq = new JTextField();
 		txtkq.setEnabled(false);
-		txtkq.setForeground(new Color(0, 0, 0));
+		txtkq.setForeground(new Color(255, 255, 255));
 		txtkq.setBackground(new Color(255, 255, 255));
 		txtkq.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		txtkq.setColumns(10);
 		txtkq.setBounds(243, 371, 257, 42);
+		txtkq.setForeground(Color.BLACK);
 		contentPane.add(txtkq);
 		
 		JLabel lblKtQua = new JLabel("Kết Quả: ");
@@ -153,4 +154,69 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		btnkq.setBounds(290, 295, 133, 42);
 		contentPane.add(btnkq);
 	}
+
+	protected double kqchuyendoi(double nhap, String gtchuyen, String gtdoi) {
+		double Ketqua = 0;
+		if(gtchuyen.equals("Kilomet")) {
+			Ketqua = DoiTuKm(nhap,gtdoi);
+		}else if(gtchuyen.equals("Hectomet")) {
+			Ketqua = DoiTuHec(nhap,gtdoi);
+		}else if(gtchuyen.equals("Decamet")) {
+			Ketqua = DoiTuDam(nhap,gtdoi);
+		}else if(gtchuyen.equals("Met")) {
+			Ketqua = DoiTuMet(nhap,gtdoi);
+		}else if(gtchuyen.equals("Decimet")) {
+			Ketqua = DoiTuDm(nhap,gtdoi);
+		}else if(gtchuyen.equals("Centimet")) {
+			Ketqua = DoiTuCm(nhap,gtdoi);
+		}else if(gtchuyen.equals("Milimet")) {
+			Ketqua = DoiTuMm(nhap,gtdoi);
+		}
+		return Ketqua;
+	}
+
+	private double DoiTuKm(double nhap, String gtdoi) {
+		double ketqua = 0;
+		if(gtdoi.equals("Kilomet")) {
+			ketqua = nhap;
+		}else if(gtdoi.equals("Hectomet")) {
+			ketqua = nhap * 10;
+		}else if(gtdoi.equals("Decamet")) {
+			ketqua = nhap * 100;
+		}else if(gtdoi.equals("Met")) {
+			ketqua = nhap * 1000;
+		}else if(gtdoi.equals("Decimet")) {
+			ketqua = nhap * 10000;
+		}else if(gtdoi.equals("Centimet")) {
+			ketqua = nhap * 100000;
+		}else if(gtdoi.equals("Milimet")) {
+			ketqua = nhap * 1000000;
+		}
+		return ketqua;
+	}
+	private double DoiTuHec(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private double DoiTuDam(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private double DoiTuMet(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private double DoiTuDm(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private double DoiTuCm(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	private double DoiTuMm(double nhap, String gtdoi) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 }
