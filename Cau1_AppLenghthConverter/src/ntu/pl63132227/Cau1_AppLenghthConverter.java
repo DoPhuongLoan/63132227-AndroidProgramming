@@ -129,7 +129,23 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		JButton btnkq = new JButton("");
 		btnkq.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				try {
+					double nhap = Double.parseDouble(txtnhap.getText());
+					if(nhap < 0) {
+						txtkq.setText("");
+						lblthongbao.setText("Không hỗ trợ số âm!");
+						return;
+					}
+					String gtchuyen = (String)comboBox1.getSelectedItem();
+					String gtdoi = (String)comboBox2.getSelectedItem();
+					double kq = kqchuyendoi(nhap, gtchuyen, gtdoi);
+					txtkq.setText(Double.toString(kq));
+					lblthongbao.setText("");
+				}catch(Exception ex) {
+					txtnhap.setText("");
+					lblthongbao.setText("Vui lòng nhập số hợp lệ!");
+					return;
+				}
 		    }
 		});
 		btnkq.setBackground(new Color(255, 255, 255));
