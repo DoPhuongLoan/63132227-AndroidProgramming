@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "ntu.pl63132227.cau2_applenghthconverter"
+    namespace = "ntu.dpl63132227.cau2_applenghthconverter"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ntu.pl63132227.cau2_applenghthconverter"
+        applicationId = "ntu.dpl63132227.cau2_applenghthconverter"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

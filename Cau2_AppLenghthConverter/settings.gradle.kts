@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Cau2_AppLenghthConverter"
 include(":app")
- 
