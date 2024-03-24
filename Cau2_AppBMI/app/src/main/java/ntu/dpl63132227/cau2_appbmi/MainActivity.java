@@ -47,6 +47,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void tinhBMI() {
-        
+        String canNang = nhapcannang.getText().toString();
+        String chieuCao = nhapchieucao.getText().toString();
+
+        if (canNang.isEmpty()) {
+            Toast.makeText(this, "Vui lòng nhập cân nặng!", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (chieuCao.isEmpty()) {
+            Toast.makeText(this, "Vui lòng nhập chiều cao!", Toast.LENGTH_SHORT).show();
+            return;
+        }
     }
 }
