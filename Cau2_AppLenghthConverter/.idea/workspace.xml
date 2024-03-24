@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96cb9a25-1504-48f5-9f36-4c2915d0b878" name="Changes" comment="" />
+    <list default="true" id="99a22180-f7a4-482e-b7a0-4c9b3d29ba4f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,9 +22,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  "associatedIndex": 6
 }]]></component>
-  <component name="ProjectId" id="2e7hLl64zvTXUJLKjY2EYNUfv73" />
+  <component name="ProjectId" id="2e7iwF0eRVUK1qN0QmEAlWyplp1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,7 +36,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
@@ -112,11 +112,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="96cb9a25-1504-48f5-9f36-4c2915d0b878" name="Changes" comment="" />
-      <created>1711261470132</created>
+      <changelist id="99a22180-f7a4-482e-b7a0-4c9b3d29ba4f" name="Changes" comment="" />
+      <created>1711262254788</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711261470132</updated>
+      <updated>1711262254788</updated>
     </task>
     <servers />
   </component>
