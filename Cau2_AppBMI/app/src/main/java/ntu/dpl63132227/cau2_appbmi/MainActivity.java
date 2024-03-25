@@ -59,5 +59,20 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Vui lòng nhập chiều cao!", Toast.LENGTH_SHORT).show();
             return;
         }
+
+        double cannang = Double.parseDouble(canNang);
+        double chieucao = Double.parseDouble(chieuCao) / 100;
+        double bmi = cannang / (chieucao * chieucao);
+        String kqua = "BMI: " + bmi;
+
+        if (bmi < 18.5) {
+            ketqua.setText(kqua);
+            trangthai.setText("Thiếu Cân");
+            hinhanh.setImageResource(R.drawable.thieucan);
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            ketqua.setText(kqua);
+            trangthai.setText("Cân Đối");
+            hinhanh.setImageResource(R.drawable.candoi);
+        }
     }
 }
