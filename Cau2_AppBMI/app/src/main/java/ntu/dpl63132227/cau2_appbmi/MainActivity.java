@@ -67,12 +67,14 @@ public class MainActivity extends AppCompatActivity {
 
         if (bmi < 18.5) {
             ketqua.setText(kqua);
-            trangthai.setText("Thiếu Cân");
-            hinhanh.setImageResource(R.drawable.thieucan);
         } else if (bmi >= 18.5 && bmi < 24.9) {
             ketqua.setText(kqua);
-            trangthai.setText("Cân Đối");
-            hinhanh.setImageResource(R.drawable.candoi);
+        } else if (bmi >= 24.9 && bmi < 29.9) {
+            ketqua.setText(kqua);
+        } else if (bmi >= 29.9 && bmi < 34.9) {
+            ketqua.setText(kqua);
+        } else {
+            ketqua.setText(kqua);
         }
     }
 }
