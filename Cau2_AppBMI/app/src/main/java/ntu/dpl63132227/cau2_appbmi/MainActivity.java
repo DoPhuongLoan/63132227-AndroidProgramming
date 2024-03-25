@@ -67,14 +67,29 @@ public class MainActivity extends AppCompatActivity {
 
         if (bmi < 18.5) {
             ketqua.setText(kqua);
+            trangthai.setText("Thiếu Cân");
+            trangthai.setTextColor(getResources().getColor(R.color.thieu_can));
+            hinhanh.setImageResource(R.drawable.thieucan);
         } else if (bmi >= 18.5 && bmi < 24.9) {
             ketqua.setText(kqua);
+            trangthai.setText("Cân Đối");
+            trangthai.setTextColor(getResources().getColor(R.color.can_doi));
+            hinhanh.setImageResource(R.drawable.candoi);
         } else if (bmi >= 24.9 && bmi < 29.9) {
             ketqua.setText(kqua);
+            trangthai.setText("Thừa Cân");
+            trangthai.setTextColor(getResources().getColor(R.color.thua_can));
+            hinhanh.setImageResource(R.drawable.thuacan);
         } else if (bmi >= 29.9 && bmi < 34.9) {
             ketqua.setText(kqua);
+            trangthai.setText("Béo Phì");
+            trangthai.setTextColor(getResources().getColor(R.color.beo_phi));
+            hinhanh.setImageResource(R.drawable.beophi);
         } else {
             ketqua.setText(kqua);
+            trangthai.setText("Béo Phì Nguy Hiểm");
+            trangthai.setTextColor(getResources().getColor(R.color.beo_phinh));
+            hinhanh.setImageResource(R.drawable.beophi_nguyhiem);
         }
     }
 }
