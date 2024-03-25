@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="thieu_can">#0474CD</color>
+    <color name="can_doi">#02AC09</color>
+    <color name="thua_can">#E16708</color>
+    <color name="beo_phi">#E30202</color>
+    <color name="beo_phinh">#DC12A3</color>
 </resources>
