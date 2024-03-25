@@ -107,7 +107,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		txtkq = new JTextField();
 		txtkq.setBounds(243, 371, 257, 42);
 		txtkq.setEnabled(false);
-		txtkq.setForeground(new Color(255, 255, 255));
+		txtkq.setForeground(new Color(0, 0, 0));
 		txtkq.setBackground(new Color(255, 255, 255));
 		txtkq.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		txtkq.setColumns(10);
@@ -122,7 +122,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		contentPane.add(lblKtQua);
 		
 		JLabel lblthongbao = new JLabel("");
-		lblthongbao.setBounds(198, 424, 328, 42);
+		lblthongbao.setBounds(241, 424, 328, 42);
 		lblthongbao.setBackground(new Color(255, 255, 255));
 		lblthongbao.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		lblthongbao.setForeground(new Color(255, 0, 0));
@@ -136,7 +136,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 					double nhap = Double.parseDouble(txtnhap.getText());
 					if(nhap < 0) {
 						txtkq.setText("");
-						lblthongbao.setText("Không hỗ trợ số âm!");
+						lblthongbao.setText("Vui lòng nhập số hợp lệ!");
 						return;
 					}
 					String gtchuyen = (String)comboBox1.getSelectedItem();
@@ -146,7 +146,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 					lblthongbao.setText("");
 				}catch(Exception ex) {
 					txtnhap.setText("");
-					lblthongbao.setText("Vui lòng nhập số hợp lệ!");
+					lblthongbao.setText("Vui lòng nhập số!");
 					return;
 				}
 		    }
