@@ -122,7 +122,7 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		contentPane.add(lblKtQua);
 		
 		JLabel lblthongbao = new JLabel("");
-		lblthongbao.setBounds(204, 435, 328, 42);
+		lblthongbao.setBounds(198, 424, 328, 42);
 		lblthongbao.setBackground(new Color(255, 255, 255));
 		lblthongbao.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		lblthongbao.setForeground(new Color(255, 0, 0));
@@ -169,24 +169,34 @@ public class Cau1_AppLenghthConverter extends JFrame {
 		lblthuoc2.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\thuoc2.png"));
 		contentPane.add(lblthuoc2);
 		
+		JLabel lblbanhrang = new JLabel("");
+		lblbanhrang.setBackground(new Color(204, 238, 255));
+		lblbanhrang.setForeground(new Color(204, 238, 255));
+		lblbanhrang.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\banhrang.png"));
+		lblbanhrang.setBounds(208, 477, 170, 134);
+		contentPane.add(lblbanhrang);
+		
+		JLabel lblthuoc1 = new JLabel("");
+		lblthuoc1.setForeground(new Color(204, 255, 235));
+		lblthuoc1.setBackground(new Color(204, 255, 235));
+		lblthuoc1.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\thuoc1.png"));
+		lblthuoc1.setBounds(491, 395, 204, 158);
+		contentPane.add(lblthuoc1);
+		
+		JLabel lbldhc = new JLabel("");
+		lbldhc.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\dhcat.png"));
+		lbldhc.setBounds(59, 255, 154, 109);
+		contentPane.add(lbldhc);
+		
+		JLabel lblbongden = new JLabel("");
+		lblbongden.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\bongden.png"));
+		lblbongden.setBounds(20, 103, 96, 97);
+		contentPane.add(lblbongden);
+		
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setBackground(new Color(204, 238, 255));
-		lblNewLabel_1.setForeground(new Color(204, 238, 255));
-		lblNewLabel_1.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\banhrang.png"));
-		lblNewLabel_1.setBounds(-86, 419, 172, 123);
+		lblNewLabel_1.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\dieu.png"));
+		lblNewLabel_1.setBounds(0, 410, 154, 132);
 		contentPane.add(lblNewLabel_1);
-		
-		JLabel lblNewLabel_3 = new JLabel("");
-		lblNewLabel_3.setForeground(new Color(204, 255, 235));
-		lblNewLabel_3.setBackground(new Color(204, 255, 235));
-		lblNewLabel_3.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\thuoc1.png"));
-		lblNewLabel_3.setBounds(491, 395, 204, 158);
-		contentPane.add(lblNewLabel_3);
-		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("D:\\MyProject\\63132227-AndroidProgramming\\Cau1_AppLenghthConverter\\src\\ntu\\pl63132227\\dhcat.png"));
-		lblNewLabel_2.setBounds(59, 255, 154, 109);
-		contentPane.add(lblNewLabel_2);
 	}
 
 	protected double kqchuyendoi(double nhap, String gtchuyen, String gtdoi) {
