@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerViewData);
         //7
-        
+        recyclerViewLandscape.setAdapter(landScapeAdapter);
     }
     ArrayList<LandScape> getRecyclerViewData(){
         ArrayList<LandScape> dsDuLieu = new ArrayList<>();
@@ -42,6 +42,6 @@ public class MainActivity extends AppCompatActivity {
         dsDuLieu.add(new LandScape("eiffel","Tháp Eiffel"));
         dsDuLieu.add(new LandScape("buckingham","Cung điện Buckingham"));
         dsDuLieu.add(new LandScape("statue_of_liberty","Tượng nữ thần tự do"));
-    return dsDuLieu;
+        return dsDuLieu;
     }
 }
