@@ -61,3 +61,4 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         }
     }
 }
+
