@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="105dp">
+    android:layout_height="120dp">
 
 
     <TextView
         android:layout_width="200dp"
         android:id="@+id/examName"
-        android:textSize="16sp"
+        android:textSize="25sp"
         android:layout_marginStart="20dp"
         android:text="First Exam"
         android:textColor="@color/black"
@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/examPic"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_below="@+id/examName"
         android:tint="#808080"
         android:layout_marginStart="20dp"
@@ -39,12 +39,12 @@
         android:layout_marginStart="10dp"
         android:gravity="center"
         android:text="May 23, 2015"
-        android:textSize="16sp"/>
+        android:textSize="20dp"/>
 
     <ImageView
         android:id="@+id/examPic2"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_below="@+id/examDate"
         android:tint="#808080"
         android:layout_marginStart="20dp"
@@ -62,17 +62,18 @@
         android:layout_marginStart="10dp"
         android:gravity="center"
         android:text="Best Of Luck"
-        android:textSize="16sp"/>
+        android:textSize="20dp"/>
 
 
     <TextView
         android:id="@+id/border2"
-        android:layout_width="match_parent"
+        android:layout_width="396dp"
         android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_alignParentBottom="true"
-        android:background="#808080"/>
+        android:layout_marginBottom="0dp"
+        android:background="#808080" />
 
 
 </RelativeLayout>
