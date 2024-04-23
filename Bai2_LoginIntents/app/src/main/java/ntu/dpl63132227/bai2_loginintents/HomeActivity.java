@@ -6,17 +6,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
     }
 
-    public void ChuyenMHLogin(View v) {
-        Intent MHlogin = new Intent(this, LoginActivity.class);
-        startActivity(MHlogin);
+    public void QuayVe(View v) {
+        Intent MHMain = new Intent(this, MainActivity.class);
+        startActivity(MHMain);
     }
 }
-
