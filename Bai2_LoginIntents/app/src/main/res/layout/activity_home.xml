@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#99E448">
+    android:background="@drawable/hinh3">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="788dp"
-        android:layout_height="84dp"
-        android:background="#FFC107"
+        android:layout_width="416dp"
+        android:layout_height="83dp"
+        android:background="#8EC390"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,11 +20,11 @@
             android:layout_width="259dp"
             android:layout_height="65dp"
             android:layout_marginStart="160dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="160dp"
             android:text="DPL-NTU"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="#218BDF"
             android:textSize="35dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,15 +38,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="135dp"
         android:layout_marginEnd="160dp"
         android:text="MÀN HÌNH CHÍNH"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#2196F3"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
 
@@ -63,51 +63,41 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="140dp"
         android:text="Chào Mừng: "
-        android:textColor="@color/black"
+        android:textColor="#2196F3"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
 
     <TextView
         android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="140dp"
         android:text="Đỗ Phương Loan"
         android:textColor="#FF0000"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="160dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvUserName"
-        app:srcCompat="@mipmap/p1" />
-
     <Button
         android:id="@+id/btnquaylai"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="191dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#5CBD60"
         android:onClick="QuayVe"
         android:text="Trang Chủ"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
