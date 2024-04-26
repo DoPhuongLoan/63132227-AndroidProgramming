@@ -9,10 +9,10 @@
     <item
         android:id="@+id/music"
         android:icon="@drawable/songs_folder"
-        android:title="Friends" />
+        android:title="Music" />
 
     <item
-        android:id="@+id/notify"
-        android:icon="@drawable/notification"
-        android:title="Messages" />
+        android:id="@+id/film"
+        android:icon="@drawable/film"
+        android:title="Film" />
 </menu>

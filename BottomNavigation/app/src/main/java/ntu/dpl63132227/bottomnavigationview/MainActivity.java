@@ -1,12 +1,9 @@
 package ntu.dpl63132227.bottomnavigationview;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -28,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
         int itemId = item.getItemId();
         if (itemId == R.id.home) {
             selectedFragment = new Home_nav();
+            Toast.makeText(MainActivity.this, "Home", Toast.LENGTH_SHORT).show();
         } else if (itemId == R.id.music) {
             selectedFragment = new Music_nav();
-        } else if (itemId == R.id.notify) {
-            selectedFragment = new Notification_nav();
+            Toast.makeText(MainActivity.this, "Music", Toast.LENGTH_SHORT).show();
+        } else if (itemId == R.id.film) {
+            selectedFragment = new Film_nav();
+            Toast.makeText(MainActivity.this, "Notification", Toast.LENGTH_SHORT).show();
         }
         if (selectedFragment != null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.main, selectedFragment).commit();
