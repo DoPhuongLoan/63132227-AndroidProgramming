@@ -3,18 +3,13 @@ package ntu.dpl63132227.navigationdrawler;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
 import androidx.core.view.GravityCompat;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        drawerLayout = findViewById(R.id.main);
+        drawerLayout = findViewById(R.id.drawerLayout);
         Menu = findViewById(R.id.menu);
         Home = findViewById(R.id.home);
         Settings = findViewById(R.id.setting);
@@ -69,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Bạn đã đăng xuất tài khoản", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Bạn đã ăng xuất tài khoản", Toast.LENGTH_SHORT).show();
             }
         });
 
