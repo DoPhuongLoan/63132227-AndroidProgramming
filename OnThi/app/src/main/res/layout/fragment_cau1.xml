@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/edtso"
+        android:id="@+id/txtmet"
         android:layout_width="229dp"
         android:layout_height="44dp"
         android:layout_marginStart="10dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/edtso2"
+        android:id="@+id/txtkm"
         android:layout_width="225dp"
         android:layout_height="45dp"
         android:layout_marginStart="10dp"
@@ -68,7 +68,7 @@
         android:inputType="number"
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/edtso" />
+        app:layout_constraintTop_toBottomOf="@+id/txtmet" />
 
     <Button
         android:id="@+id/btnchuyen"
@@ -79,5 +79,5 @@
         android:text="Đổi đơn vị"
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtso2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtkm" />
 </androidx.constraintlayout.widget.ConstraintLayout>
