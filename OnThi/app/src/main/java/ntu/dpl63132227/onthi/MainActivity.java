@@ -27,14 +27,13 @@ public class MainActivity extends AppCompatActivity {
                 }else if (itemId == R.id.cau1) {
                     selectedFragment = new Cau1Fragment();
                 } else if (itemId == R.id.cau2) {
-                    selectedFragment = new Fragment();
-                } else if (itemId == R.id.cau3) {
-                    selectedFragment = new Fragment();
-                }  else if (itemId == R.id.cau4) {
-                    selectedFragment = new Fragment();
+                    selectedFragment = new Cau2Fragment();
                 }
-                // It will help to replace the
-                // one fragment to other.
+//                else if (itemId == R.id.cau3) {
+//                    selectedFragment = new Cau3Fragment();
+//                }  else if (itemId == R.id.cau4) {
+//                    selectedFragment = new Cau4Fragment();
+//                }
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragmentSpace, selectedFragment).commit();
                 }
