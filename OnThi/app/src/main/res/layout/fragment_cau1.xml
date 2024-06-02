@@ -16,6 +16,7 @@
         android:layout_marginEnd="26dp"
         android:text="ĐỔI ĐƠN VỊ ĐO CHIỀU DÀI"
         android:textAlignment="center"
+        android:textColor="#F60000"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,24 +51,13 @@
         android:id="@+id/textView8"
         android:layout_width="136dp"
         android:layout_height="40dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="50dp"
         android:text="Đơn vị đo (km)"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <Button
-        android:id="@+id/btnchuyen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="50dp"
-        android:text="Đổi đơn vị"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtkm" />
 
     <EditText
         android:id="@+id/txtkm"
@@ -80,4 +70,28 @@
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/txtmet" />
+
+    <!-- Nút Reset -->
+
+    <Button
+        android:id="@+id/btnchuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Đổi đơn vị"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/btnreset"
+        app:layout_constraintTop_toBottomOf="@+id/txtkm" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:text="Xóa"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtkm" />
 </androidx.constraintlayout.widget.ConstraintLayout>

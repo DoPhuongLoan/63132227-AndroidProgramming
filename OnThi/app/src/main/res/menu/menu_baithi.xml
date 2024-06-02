@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
-        android:icon="@drawable/home"
-        android:title="Home" />
-    <item
         android:id="@+id/cau1"
         android:icon="@drawable/hinh1"
         android:title="Câu 1" />
@@ -20,4 +16,8 @@
         android:id="@+id/cau4"
         android:icon="@drawable/hinh4"
         android:title="Câu 4" />
+    <item
+        android:id="@+id/navigation_information"
+        android:icon="@drawable/hinh5"
+        android:title="Information" />
 </menu>

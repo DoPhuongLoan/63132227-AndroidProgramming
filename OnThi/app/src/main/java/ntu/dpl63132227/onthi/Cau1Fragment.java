@@ -15,7 +15,7 @@ public class Cau1Fragment extends Fragment {
     EditText editText_met;
     EditText editText_kilomet;
     Button btnChuyen;
-
+    Button btnReset;
 
     public Cau1Fragment() {
         // Required empty public constructor
@@ -31,7 +31,6 @@ public class Cau1Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -42,24 +41,45 @@ public class Cau1Fragment extends Fragment {
         // Tìm điều khiển trong view này
         editText_met = viewCau1.findViewById(R.id.txtmet);
         editText_kilomet = viewCau1.findViewById(R.id.txtkm);
-        btnChuyen  = viewCau1.findViewById(R.id.btnchuyen);
+        btnChuyen = viewCau1.findViewById(R.id.btnchuyen);
+        btnReset = viewCau1.findViewById(R.id.btnreset);
+
         btnChuyen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String duLieuMet = editText_met.getText().toString();
                 String duLieuKiloMet = editText_kilomet.getText().toString();
-                //
-                if (!duLieuMet.isEmpty()) // user có nhập dữ liệu met, cần đổi sang km
-                {
-                    Toast.makeText(viewCau1.getContext(),"m->km", Toast.LENGTH_SHORT).show();
-                }
-                else //đổi từ km sang met
-                {
-                    Toast.makeText(viewCau1.getContext(),"km->m", Toast.LENGTH_SHORT).show();
-                }
 
+                if (!duLieuMet.isEmpty()) {
+                    try {
+                        double met = Double.parseDouble(duLieuMet);
+                        double kilomet = met / 1000;
+                        editText_kilomet.setText(String.valueOf(kilomet));
+                    } catch (NumberFormatException e) {
+                        Toast.makeText(viewCau1.getContext(), "Dữ liệu nhập vào không hợp lệ (mét)", Toast.LENGTH_SHORT).show();
+                    }
+                } else if (!duLieuKiloMet.isEmpty()) { // Đổi từ km sang mét
+                    try {
+                        double kilomet = Double.parseDouble(duLieuKiloMet);
+                        double met = kilomet * 1000;
+                        editText_met.setText(String.valueOf(met));
+                    } catch (NumberFormatException e) {
+                        Toast.makeText(viewCau1.getContext(), "Dữ liệu nhập vào không hợp lệ (kilomet)", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(viewCau1.getContext(), "Vui lòng nhập giá trị", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
+        btnReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText_met.setText("");
+                editText_kilomet.setText("");
+            }
+        });
+
         return viewCau1;
     }
 }
