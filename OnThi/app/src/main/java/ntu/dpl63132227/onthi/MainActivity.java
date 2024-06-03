@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (itemId == R.id.cau3) {
                     selectedFragment = new Cau3Fragment();
                 }  else if (itemId == R.id.cau4) {
-                    selectedFragment = new Cau4Fragment();
+                    selectedFragment = new Cau4FragmentRy();
                 }
                 if (selectedFragment != null) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragmentSpace, selectedFragment).commit();
